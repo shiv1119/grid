@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Column</title>
+    <link rel="stylesheet" href="./rows.css">
+
+</head>
+
+<body>
+    <div class="grid">
+        <div class="item">
+            Item 3           
+        </div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+    </div>
+    <script>
+
+    // API for get requests
+    let fetchRes = fetch(
+        "579b464db66ec23bdd00000133b6005c1298499a5388baf9f9dfc0ff");
+        // fetchRes is the promise to resolve
+        // it by using.then() method
+        fetchRes.then(res =>
+            res.json()).then(d => {
+                console.log(d)
+            })
+    </script>
+</body>
+</html>
